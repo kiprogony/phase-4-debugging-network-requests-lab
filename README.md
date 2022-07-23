@@ -61,13 +61,15 @@ developing your own process.
 ## Your Notes Here
 
 - Add a new toy when the toy form is submitted
-
   - How I debugged:
+     Used the rails server log, when trying to add a new toy and it responded with  a POST error with status code 500. USed this to chech the Post Method in the API contoller and it the bug was reolved.
 
 - Update the number of likes for a toy
 
   - How I debugged:
+    debugged from the web console. Trying to add the likes using the like button returns an error indicating that a json response is sxpected. Corrected the error by making sure a json format is returned by the API in the controller..
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+   Ran a byebug session inside the DELETE action to ensure all the params are accesssed
